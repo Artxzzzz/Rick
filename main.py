@@ -1,6 +1,6 @@
 from manager import getFrames, manageArgs
 from Packages import constants
-from colorama import Fore
+from colorama import Fore, Style
 
 import time
 
@@ -9,16 +9,24 @@ def main():
     args = manageArgs()
 
     fps = args.frame
+    bright = args.bright
+
+    print(bright)
+
     color = args.color
     color = color.upper()
-
+    
     if not color in constants.SUPPORTEDCOLORS:
         color = "WHITE"
 
     try: 
         while True:
             for frame in Frames:
-                print(getattr(Fore, color), frame)
+                if not bright:
+                    print(getattr(Fore, color), frame)
+                    time.sleep(1/fps)
+                    continue
+                print(Style.BRIGHT, getattr(Fore, color), frame)
                 time.sleep(1/fps)
     except KeyboardInterrupt:
         print()
