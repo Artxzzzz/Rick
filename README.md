@@ -6,7 +6,7 @@
 * Este projeto está licenciado sob a [` GNU General Public License v3.0 `](LICENSE)
 
 ## Créditos:
-* A arte ASCII usada nesse projeto foi retirada do repositório `ascii.live`:
+* A arte ASCII usada nesse projeto foi retirada do repositório `ascii-live`:
 https://github.com/hugomd/ascii-live
 
 
