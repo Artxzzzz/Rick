@@ -4,12 +4,12 @@ from features import showVersion
 def main():
     Frames = getFrames()
     _args = getArgs()
-    fps, bright, color, version = args(_args)
+    fps, bright, color, version, erase = args(_args)
 
     if version:
         showVersion()
     else:
-        play(Frames, bright, color, fps)
+        play(Frames, bright, color, fps, erase)
 
 
 if __name__ == "__main__":

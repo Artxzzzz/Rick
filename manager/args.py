@@ -5,6 +5,7 @@ def args(args):
     fps = args.frame
     bright = args.bright
     version = args.version
+    erase = args.erase
 
     color = args.color
     color = color.upper()
@@ -15,4 +16,4 @@ def args(args):
     if args.sound:
         features.openURL()
     
-    return fps, bright, color, version
+    return fps, bright, color, version, erase

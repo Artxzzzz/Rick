@@ -1,9 +1,10 @@
 from colorama import Fore, Style, Cursor
 import time 
 
-def printFrames(Frames, bright, color, fps):
+def printFrames(Frames, bright, color, fps, erase):
     for frame in Frames:
-        print(Cursor.POS(0, 0), end="")
+        erase and print(Cursor.POS(0, 0), end="")
+
         if not bright:
             print(getattr(Fore, color), frame)
             time.sleep(1/fps)
@@ -12,9 +13,9 @@ def printFrames(Frames, bright, color, fps):
         time.sleep(1/fps)
 
 
-def play(Frames, bright, color, fps):
+def play(Frames, bright, color, fps, erase):
     try: 
         while True:
-            printFrames(Frames, bright, color, fps)
+            printFrames(Frames, bright, color, fps, erase)
     except KeyboardInterrupt:
         print()

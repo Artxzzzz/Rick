@@ -8,6 +8,7 @@ def getArgs():
     parser.add_argument("-v", "--version", nargs="?", const=True, default=False, type=bool, help="Show version")
     parser.add_argument("-b", "--bright", nargs="?", const=True, default=False, type=bool, help="Set bright")
     parser.add_argument("-s", "--sound", nargs="?", const=True, default=False, type=bool, help="Open youtube url from rick")
+    parser.add_argument("-e", "--erase", nargs="?", const=False, default=True, type=bool, help="Disable the erase previous frame option")
     
     args = parser.parse_args()
 
