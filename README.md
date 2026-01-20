@@ -69,7 +69,7 @@ rick -b
 * Depois gere o executável usando
 
     ``` python
-    pyinstaller --onefile main.py
+    pyinstaller --onefile --add-data "frames;frames" main.py
     ```
 
 * Agora o executável estará na pasta `dist/`
