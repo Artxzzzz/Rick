@@ -1,8 +1,9 @@
-from colorama import Fore, Style
+from colorama import Fore, Style, Cursor
 import time 
 
 def printFrames(Frames, bright, color, fps):
     for frame in Frames:
+        print(Cursor.POS(0, 0), end="")
         if not bright:
             print(getattr(Fore, color), frame)
             time.sleep(1/fps)
