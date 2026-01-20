@@ -1,9 +1,5 @@
 from manager import getFrames, getArgs, args, play
 from features import showVersion
-from packages import constants
-from colorama import Fore, Style
-
-import time
 
 def main():
     Frames = getFrames()
