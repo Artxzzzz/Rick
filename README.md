@@ -88,7 +88,7 @@ rick -s
 
  - Faça um fork ou clone o repositório:
 	``` bash
-	https://github.com/Artxzzzz/Rick.git
+	git clone https://github.com/Artxzzzz/Rick.git
 	```
  - Crie uma branch para suas alterações:
 	``` bash
