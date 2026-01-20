@@ -59,7 +59,7 @@ rick -s
 ### ▶️ Como executar:
 * Baixe ou clone o repositório usando 
     ``` bash
-    https://github.com/Artxzzzz/Rick.git
+    git clone https://github.com/Artxzzzz/Rick.git
     ```
 * Na pasta do projeto execute:
 
