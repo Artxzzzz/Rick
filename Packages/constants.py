@@ -1,4 +1,7 @@
-FRAMESPATH = "C:\Games\Pasta do Arthur\Projetos\VscodeProjects\Python\Terminal\Rick\Frames"
+import sys
+import os
+
+FRAMESPATH = os.path.join(sys._MEIPASS,"Frames")
 SUPPORTEDCOLORS = (
     "BLACK",
     "RED",
