@@ -11,12 +11,14 @@ rick -c Blue
 rick -f 3
 rick -v
 rick -b
+rick -s
 ```
 * Opções disponíveis:
     - `-c, --color <color>` → Define a cor do ASCII
     - `-f, --frame <fps>` → Controla a velocidade da animação
     - `-b, --bright` → Ativa cores brilhantes
     - `-v, --version `→ Exibe a versão do programa
+    - `-s, --sound` → Abre uma página no navegador com Never Gonna Give You Up
 
 
 ### 🔧 Funcionalidades:

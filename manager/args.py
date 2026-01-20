@@ -1,4 +1,5 @@
 from packages import constants
+import features
 
 def args(args):
     fps = args.frame
@@ -11,5 +12,7 @@ def args(args):
     if not color in constants.SUPPORTEDCOLORS:
         color = "WHITE"
     
+    if args.sound:
+        features.openURL()
     
     return fps, bright, color, version
