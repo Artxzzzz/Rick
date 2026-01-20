@@ -1,4 +1,4 @@
-from Packages import constants
+from packages import constants
 
 import os
 

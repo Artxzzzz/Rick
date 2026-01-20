@@ -5,7 +5,7 @@ if getattr(sys, 'frozen', False):
     FRAMESPATH = os.path.join(sys._MEIPASS,"Frames")
 else:
     FRAMESPATH = "Frames"
-    
+
 SUPPORTEDCOLORS = (
     "BLACK",
     "RED",
@@ -16,3 +16,5 @@ SUPPORTEDCOLORS = (
     "CYAN",
     "WHITE"
 )
+
+VERSION = '1.0.2'
