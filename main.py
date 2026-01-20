@@ -10,17 +10,19 @@ def main():
 
     fps = args.frame
     bright = args.bright
-
-    print(bright)
+    version = args.version
 
     color = args.color
     color = color.upper()
     
     if not color in constants.SUPPORTEDCOLORS:
         color = "WHITE"
+    
+    if version:
+        print("v1.0.2")
 
     try: 
-        while True:
+        while not version:
             for frame in Frames:
                 if not bright:
                     print(getattr(Fore, color), frame)
