@@ -2,14 +2,14 @@ from manager import getFrames, getArgs, args, play
 from features import showVersion
 
 def main():
-    Frames = getFrames()
-    _args = getArgs()
-    fps, bright, color, version = args(_args)
+    frames = getFrames()
+    parsedArgs = getArgs()
+    fps, bright, color, version = args(parsedArgs)
 
     if version:
         showVersion()
     else:
-        play(Frames, bright, color, fps)
+        play(frames, bright, color, fps)
 
 
 if __name__ == "__main__":

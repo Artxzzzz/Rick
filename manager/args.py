@@ -7,12 +7,7 @@ def args(args):
     version = args.version
 
     color = args.color
-    color = color.upper()
-    
-    if not color in constants.SUPPORTEDCOLORS:
-        color = "WHITE"
-    
-    if args.sound:
-        features.openURL()
-    
+    color = color.upper() if color.upper() in constants.SUPPORTEDCOLORS else "WHITE"
+    features.openURL() if args.sound else None
+
     return fps, bright, color, version

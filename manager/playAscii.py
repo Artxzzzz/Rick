@@ -3,13 +3,10 @@ import time
 
 def printFrames(Frames, bright, color, fps):
     attr = getattr(Fore, color)
-
+    style = Style.BRIGHT if bright else Style.NORMAL
+    
     for frame in Frames:
-        if not bright:
-            print(attr, frame)
-            time.sleep(1/fps)
-            continue
-        print(Style.BRIGHT, attr, frame)
+        print(style, attr, frame)
         time.sleep(1/fps)
 
 
