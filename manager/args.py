@@ -2,7 +2,7 @@ from packages import constants
 from features import openURL
 
 def args(args):
-    fps = args.frame
+    fps = args.frame if not args.frame == 0 else 14
     bright = args.bright
     version = args.version
 
